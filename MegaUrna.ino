@@ -15,7 +15,7 @@ int duration;
 
 static bool State_r;
 
-// Вставьте сюда свои учетные данные сети
+// Вставка сюда учетныех данных сети
 const char* ssid = "2065-IoT";   // SSID
 const char* password = "123123123";  // пароль
 //const char* ssid = "iPhone Андрюша";
@@ -26,10 +26,10 @@ const char* password = "123123123";  // пароль
 #define AIO_SERVERPORT  1883
 WiFiClient client_mqtt;
 Adafruit_MQTT_Client mqtt(&client_mqtt, AIO_SERVER, AIO_SERVERPORT);
-Adafruit_MQTT_Publish test = Adafruit_MQTT_Publish(&mqtt, "home/room/test");
+Adafruit_MQTT_Publish test = Adafruit_MQTT_Publish(&mqtt, "home/room/test"); //Настройка сети
 
 
-// Запускаем бот
+// Запускаем бота
 #define BOTtoken "1628681311:AAE9croZDoxiq5U1FIwlKr0R2BHrH7fiz0I"  // Вставляем токен бота.
 
 // Используйте @myidbot, чтобы получить ID пользователя или группы
